@@ -525,8 +525,8 @@ const save = () => {
 const totalScore = () => state.scores.reduce((sum, score) => sum + score, 0);
 const canStart = (index) => index === 0 || state.completed.includes(index - 1);
 
-function topbar(label = "STORYSPARK QUEST") {
-  return `<header class="topbar"><a class="brand" href="#" onclick="renderHome(); return false"><span class="brand-mark">✦</span><span>STORYSPARK<small>${label}</small></span></a>${state.name ? `<span class="pill">👤 ${escapeHTML(state.name)}</span>` : ""}</header>`;
+function topbar(label = "NARRA-QUEST") {
+  return `<header class="topbar"><a class="brand" href="#" onclick="renderHome(); return false"><span class="brand-mark">✦</span><span>NARRA-QUEST<small>${label}</small></span></a>${state.name ? `<span class="pill">👤 ${escapeHTML(state.name)}</span>` : ""}</header>`;
 }
 
 function renderWelcome() {
